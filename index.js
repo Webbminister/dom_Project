@@ -1,19 +1,15 @@
-const heartButton = document.getElementById("heart");
+const heartButton = document.getElementById("heart_btn");
 const countIncrease = document.getElementById("increase");
 const countDecrease = document.getElementById("decrease");
 // const totalAmount = document.getElementById("total-amt")
 // like button reaction
 heartButton.addEventListener("click", function () {
-    heartButton.style.color = "blue";
-    heartButton.style.width ="30px";
-} )
-
-//create a counter for quantity
-//create a click button for counter
-
+    heartButton.classList.add("heart");
+    } )
 
 
 countIncrease.addEventListener("click", function() {
+    const aggregate = document.querySelector("#aggregate");
     const itemPrice = document.querySelector("#price");
     let quantity = document.querySelector("#count");
     const subAmount = document.querySelector("#total-amt")
@@ -23,12 +19,14 @@ countIncrease.addEventListener("click", function() {
      const newPrice= Number(itemPrice.textContent);
      const newAmount = newPrice * result;
 subAmount.innerText = newAmount;
+aggregate.textContent = newAmount
      console.log(Number(newAmount));
      
 
-})
-
+ })
+// decreasing of price
 countDecrease.addEventListener("click", function(){
+    const aggregate = document.querySelector("#aggregate");
     const itemPrice = document.querySelector("#price");
     const subAmount = document.querySelector("#total-amt")
     let quantity = document.querySelector("#count");
@@ -40,9 +38,12 @@ countDecrease.addEventListener("click", function(){
      subAmount.innerText = newAmount;
      console.log(Number(newAmount));
 
+     aggregate.textContent = newAmount;
+
     if(result < 0 || subAmount.innerText === 0){
         subAmount.innerText = 0;
         quantity.innerText = 0;
+        aggregate.textContent = 0;
     }
         
 

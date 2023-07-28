@@ -14,7 +14,7 @@
                 <h2>Shopping Cart</h2>
             <div class="item-info">
                 <i class="fa-regular fa-circle-xmark" id="delete"></i>
-                <i class="fa-regular fa-heart " id="heart"></i>
+                <div id="heart_btn"><i class="fa-solid fa-heart" ></i></div>
                 <div><img src="https://fatcat.ng/storage/files/ng/1240/thumb-816x460-098c9d745898e7dc65772d890b6d501c.jpg" alt=""></div>
                 <!-- items discription -->
                 <div class="item-desc">
@@ -31,34 +31,11 @@
                     <button class="btn" id="decrease">-</button>
                 </div>
                 <!-- total amount -->
-                <div><p id="total-amt">0</p></div>
+                <div><p  id="total-amt">0</p></div>
             </div>
-            <hr>
-            <div class="item-info">
-                <i class="fa-regular fa-circle-xmark" id="delete"></i>
-                <i class="fa-regular fa-heart " id="heart"></i>
-                <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Blue_Tshirt.jpg/220px-Blue_Tshirt.jpg" alt=""></div>
-                <!-- items discription -->
-                <div class="item-desc">
-                    <p>T- Shirt</p>
-                    <p><strong>Color:</strong> blue</p>
-                    <p><strong>Price: $</strong> <span id="price">400</span></p>
-                </div>
-                <!-- quantity -->
-
-                <div>
-                    <button class="btn" id="increase">+</button>
-                    <!-- <input id="count" type="number"> -->
-                    <button class="btn-count"><span id="count">0</span></button>
-                    <button class="btn" id="decrease">-</button>
-                </div>
-                <!-- total amount -->
-                <div><p id="total-amt">0</p></div>
-            </div>
-
+           
             <div class="total">
-                <h3>Total: 1000 </h3>
-                <button></button>
+                <h3>Total:$ <span id="aggregate">0</span></h3>
             </div>
             </div>
          </div>

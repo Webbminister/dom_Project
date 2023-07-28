@@ -30,14 +30,12 @@ align-items: center;
     left: -10px;
     line-height: 0.5;
 }
-/* .heart{
-    display: hidden ;
-    color: r
-} */
+.heart{
+  font-size: 25px;
+  color: red;
+  
+} 
 
-.hidden{
-    color:none;
-}
 .item-box h2{
     text-align: center;
 }
